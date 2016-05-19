@@ -124,3 +124,5 @@ export PATH="/Users/mkwiek/Library/Python/2.7/bin:$PATH"
 export GOROOT="/usr/local/go"
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/mirantis
+
+export PATH=$PATH:$GOPATH/bin
