@@ -1,3 +1,3 @@
-WIFI=`/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep '[^B]SSID'`
+WIFI=$(iw dev wlp2s0 link | grep SSID | awk '{print $2}')
 
-if [[ $WIFI =~ Mirantis ]]; then sudo cp ~/config/workhosts /etc/hosts ; else sudo cp ~/config/homehosts /etc/hosts ; fi
+if [[ $WIFI =~ CoworkingNess ]]; then sudo cp ~/config/workhosts /etc/hosts ; else sudo cp ~/config/homehosts /etc/hosts ; fi
